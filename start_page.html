@@ -29,23 +29,74 @@
 
         background-color: var(--c-background-color);
         color: var(--base-font-color);
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
 
+      }
+      header{
+
+        text-align: center;
+        color: var(--c-yellow);
+        text-size-adjust: 150%;
+
+      }
+      header, footer{
+        background-color: var(--c-background-highlights);
       }
       main{
 
-        background-color: var(--c-background-highlights);
+        display: flex;
+        flex-direction: row;
 
       }
-      nav ul li a{
+      nav ul{
 
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
         color: var(--c-magenta);
       }
+
       nav ul li a:hover{
         color: var(--c-orange);
       }
-      aside ul li{
 
+      main article{
+
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+
+      }
+      article h3{
+
+
+        padding-top: 50px;
+        border: solid;
+        border-color: var(--c-cyan);
+        border-radius: 3px;
+
+      }
+
+
+      main aside{
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: top-center;
+        align-items: center;
+        list-style-type: circle;
         color: var(--c-green);
+
+      }
+      aside ul{
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
 
       }
       aside ul li a{
